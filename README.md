@@ -19,6 +19,14 @@
 - 🔐 **[Validador de Senhas](https://github.com/ThiagoDuarteDS/Validador)**: verificador de força de senha com Python e Shiny.
 
 <div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ThiagoDuarteDS/ThiagoDuarteDS/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ThiagoDuarteDS/ThiagoDuarteDS/output/github-snake.svg" />
+    <img alt="Cobrinha comendo minhas contribuições" src="https://raw.githubusercontent.com/ThiagoDuarteDS/ThiagoDuarteDS/output/github-snake.svg" />
+  </picture>
+</div>
+
+<div align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ThiagoDuarteDS&layout=compact&theme=tokyonight&card_width=300" alt="Linguagens mais usadas">
 </div>
 
