@@ -13,7 +13,7 @@
 
 ## 📂 Projetos em destaque
 
-- 📈 **[TVG Investment](https://github.com/ThiagoDuarteDS/TVG-INVESTMENT)**: plataforma de investimentos com onboarding interativo, dashboard e metas financeiras. React, TypeScript, Vite, Tailwind e Express.
+- 📈 **[TVG Investment](https://github.com/ThiagoDuarteDS/TVG-INVESTMENT)**: plataforma de investimentos com onboarding interativo, dashboard e metas financeiras.
 - 🌐 **[TH Soluções Digitais](https://github.com/ThiagoDuarteDS/th-digital-site)**: site para venda de placas com NFC e QR code, com pedido via WhatsApp.
 - 🤖 **[Infinity Bank Chat Bot](https://github.com/ThiagoDuarteDS/INFINITY-BANK---chat-bot)**: chatbot para Telegram feito em Python.
 - 🔐 **[Validador de Senhas](https://github.com/ThiagoDuarteDS/Validador)**: verificador de força de senha com Python e Shiny.
