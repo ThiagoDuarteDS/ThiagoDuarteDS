@@ -16,12 +16,11 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
       - name: Generate snake animation
-        uses: Platane/snk/svg-only@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-snake-neon.svg?color_snake=#00e5ff&color_dots=#161b22,#0b3d5c,#0f6a9a,#00a8e8,#00e5ff&color_dot_border=#0d1117
+        run: python3 scripts/snake.py --user "${{ github.repository_owner }}" --out dist/github-snake-grow.svg
 
       - name: Publish to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
