@@ -26,6 +26,6 @@
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=python,html,css,ts,react,vite,tailwind,nodejs,git,github,vscode" alt="Tecnologias">
+<img src="https://skillicons.dev/icons?i=python,java,html,css,nodejs,git,github,vscode" alt="Tecnologias">
 
 </div>
