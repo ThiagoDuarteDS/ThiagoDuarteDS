@@ -20,7 +20,7 @@ CELL = 12
 PITCH = 14
 MARGIN = 12
 BACKGROUND = "#0d1117"
-DOT_COLORS = ["#161b22", "#0b3d5c", "#0f6a9a", "#00a8e8", "#00e5ff"]
+DOT_COLORS = ["#000000", "#0b3d5c", "#0f6a9a", "#00a8e8", "#00e5ff"]   # [0] = célula vazia
 SNAKE_COLOR = "#00e5ff"
 HEAD_COLOR = "#e0fbff"
 APPLE_COLOR = "#ff4d6d"
@@ -64,6 +64,15 @@ def build_grid(cells):
     for day, level in cells.items():
         idx = (day - first).days + offset
         grid[(idx // 7, idx % 7)] = level
+
+    # A última coluna é a semana atual e costuma ter só alguns dias. Ela é tirada
+    # enquanto estiver incompleta, senão sobra um bloquinho solto para fora do
+    # quadro. Ela aparece quando a semana fecha (sábado).
+    last = max(w for w, _ in grid)
+    column = [c for c in grid if c[0] == last]
+    if len(column) < 7:
+        for c in column:
+            del grid[c]
     return grid
 
 
@@ -198,7 +207,7 @@ def render_svg(grid, trail, lengths, eaten, bonus):
 
     css = [
         f".s{{animation-duration:{duration:.2f}s;animation-iteration-count:infinite;"
-        "animation-timing-function:linear}}"
+        "animation-timing-function:linear}"
     ]
     for level, color in enumerate(DOT_COLORS):
         css.append(f".c{level}{{fill:{color}}}")
